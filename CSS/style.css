@@ -1,0 +1,397 @@
+:root {
+    --color-uno: #f9c74f;
+    --color-dos: #343a40;
+    --color-tres: black;
+    --color-fondo: white;
+    --fuente-principal: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background: var(--color-fondo);
+    font-size: 6px;
+}
+
+
+a {
+    color: white;
+    padding: 1em;
+    font-size: 1.6em;
+}
+
+a:hover {
+    background-color: var(--color-uno);
+    color: var(--color-dos);
+}
+
+img {
+    width: 100%;
+}
+
+.caja__3 {
+    text-align: center;
+    padding: 4em;
+    color: var(--color-dos);
+}
+
+h1 {
+    font-size: 5em;
+    color: var(--color-tres);
+}
+
+.contenedor__padre {
+    border-radius: 1.5em;
+    padding: .1em;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: .1em auto;
+    flex-wrap: wrap;
+}
+
+.contenedor__padre2 {
+    background-color: var(--color-uno);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    padding: .1em;
+    width: 90%;
+    margin: .1em auto;
+    flex-wrap: wrap;
+}
+
+.contenedor__flexbox {
+    justify-content: center;
+    border: .2em
+     solid black;
+    border-radius: 2em;
+    padding: .1em;
+    margin: .1em;
+    background-color: var(--color-fondo);
+    flex-grow: 2;
+    flex-basis: 0;
+    width: 70%;
+
+}
+
+.caja__6 {
+    width: 100%;
+}
+
+.caja__7 {
+    color: var(--color-tres);
+    text-align: center;
+    padding: 4em;
+    font-size: .7em;
+}
+
+.caja__8 {
+    text-align: center;
+    color: var(--color-uno);
+    padding-bottom: 1.5em;
+    font-size: 2em;
+    margin-top: auto;
+}
+
+i {
+    padding: .2em;
+    text-align: center;
+    font-size: 1em;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: var(--color-tres);
+}
+
+p {
+    margin-bottom: 1em;
+    color: var(--color-dos);
+    font-size: 1.6em;
+}
+
+i:hover {
+    color: var(--color-dos);
+}
+
+.caja__9 {
+    display: block;
+    background-color: var(--color-tres);
+    padding: 4em;
+    text-align: center;
+}
+
+.caja_10 {
+    text-align: center;
+    object-position: center;
+}
+
+
+b {
+    color: var(--color-fondo);
+}
+
+.caja__9 b {
+    font-size: 2em;
+}
+
+/*QUIÉN SOY*/
+
+.contenedor_qs {
+    border: var(--color-tres) 2px 2px 0px 0px solid;
+    margin: 100px 50px 50px 50px;
+    padding: 40px;
+    display: inline-flex;
+    background-color: white;
+
+}
+
+.foto {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    display: inline-flex;
+
+}
+
+.quien_soy{
+
+    font-family: var(--cuerpo-de-texto);
+    color: var(--color-cuatro);
+}
+
+.iconos2 {
+    font-size: 40px;
+}
+.titulo h1 {
+    color: var(--color-cuatro);
+    font-family: var(--titulo-menu);
+    font-size: 40px;
+    margin-left: 30px ;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/*GALERÍA*/
+.galeria {
+    margin-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 0 32%;
+    height: 100px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+  }
+
+ 
+.footer {
+  position: relative;
+  z-index: -2;
+  height: 270px;
+  background: var(--color-uno);
+}
+
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 80px;
+}
+
+
+.footer li {
+    font-size: 3em;
+    display: inline;
+    padding-top: 30px;
+}
+
+/*MEDIA QUERYS*/
+
+
+
+/* Dispositivo= Tablets, Móviles de 481px a 767px*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    body {
+        background: var(--color-fondo);
+        font-size: 5px;
+
+    }
+
+
+    .nav {
+        background-color: black;
+        padding: .3em;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+    
+    .nav li {
+        display: inline;
+        padding: 2em;
+        
+    }
+    
+    a {
+        color: white;
+        padding: 1em;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3em;
+    }
+    
+    a:hover {
+        background-color: var(--color-uno);
+        color: var(--color-dos);
+    }
+
+    .contenedor__padre {
+        border-radius: .4em;
+        padding: .9em;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 1em auto;
+        flex-direction: column;
+      }
+
+    .contenedor__padre2 {
+      background-color: var(--color-uno);
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+      padding: 4em;
+      width: 100%;
+      margin: 2em auto;
+      flex-direction: column;
+    }
+
+    .caja__8 {
+        font-size: 3em;
+    }
+
+    .caja__9 {
+        display: block;
+        background-color: var(--color-tres);
+        padding: 10em;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .caja__9 b {
+        font-size: 3em;
+    }
+    
+
+}
+
+/* Dispositivo= Smartphones de 320px a 479px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        background: var(--color-fondo);
+        font-size: 3px;
+    }
+
+    
+    .nav {
+        background-color: black;
+        padding: .3em;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+    
+    .nav li {
+        display: inline;
+        padding: 2em;
+        
+    }
+    
+    a {
+        color: white;
+        padding: 1em;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3em;
+    }
+    
+    a:hover {
+        background-color: var(--color-uno);
+        color: var(--color-dos);
+    }
+
+    .contenedor__padre {
+        border-radius: .4em;
+        padding: .9em;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 1em auto;
+        flex-direction: column;
+      }
+
+    .contenedor__padre2 {
+      background-color: var(--color-uno);
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+      padding: 4em;
+      width: 100%;
+      margin: 2em auto;
+      flex-direction: column;
+    }
+
+    .caja__8 {
+        font-size: 3em;
+    }
+
+    .caja__9 {
+        display: block;
+        background-color: var(--color-tres);
+        padding: 10em;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .caja__9 b {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+}
